@@ -7,6 +7,14 @@ from abc import ABCMeta, abstractmethod
 
 class Cloud(metaclass=ABCMeta):
 	@abstractmethod
+	def connect():
+		pass
+
+	@abstractmethod
+	def disconnect():
+		pass
+
+	@abstractmethod
 	def getVMs(query):
 		""" Returns all VM's, with optional freetext filter query """
 		pass
