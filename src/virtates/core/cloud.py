@@ -15,6 +15,10 @@ class Cloud(metaclass=ABCMeta):
 		pass
 
 	@abstractmethod
+	def is_connected():
+		pass
+		
+	@abstractmethod
 	def getVMs(query):
 		""" Returns all VM's, with optional freetext filter query """
 		pass
